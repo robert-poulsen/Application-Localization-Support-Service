@@ -1,0 +1,10 @@
+org\example\Translator.class
+org\example\Keys.class
+org\example\Login.class
+org\example\FileToMap.class
+org\example\FormatFileWriter.class
+org\example\Registration.class
+org\example\MapToDatabase.class
+org\example\UserProject.class
+org\example\DatabaseManager.class
+org\example\Server.class

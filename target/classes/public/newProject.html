@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* змінюємо шрифт */
+            background-color: #f4f4f4; /* задаємо фоновий колір */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h2 {
+            margin-top: 250px; /* відступ від верху для заголовку */
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        nav {
+            margin-right: 1600px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        main {
+            flex: 1;
+            text-align: center; /* центруємо вміст */
+        }
+
+        select,
+        input[type='text'],
+        input[type='file'] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type='submit'] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: auto;
+            background-color: #343a40; /* колір футера */
+            color: #fff; /* колір тексту */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="images.png" alt="Icon Image" style="height: 50px; width: 50px;">
+    <nav>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<main>
+<h2>Create new project</h2>
+<form action="/newProject" method="post" enctype="multipart/form-data">
+    <label for='projectName'>Project name:</label>
+    <input type='text' id='projectName' name='projectName'><br>
+    <label for="language">Language</label>
+    <select name="language">
+        <option value="en">English</option>
+        <option value="uk">Ukrainian</option>
+        <option value="de">German</option>
+        <option value="pl">Polish</option>
+        <option value="es">Spanish</option>
+    </select>
+    <br>
+    <input type="file" name="file" id="file">
+    <br>
+    <input type="submit" value="Confirm">
+</form>
+</main>
+<footer>
+    <div>&copy; 2024 Sumy State University, Valerij Diahovets </div>
+</footer>
+</body>
+</html>
